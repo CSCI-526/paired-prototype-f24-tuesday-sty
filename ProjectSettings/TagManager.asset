@@ -4,18 +4,21 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Trail
+  - Shadow
+  - Trap
+  - Goal
+  - obstical
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Obstical
+  - Enemy
+  - Trap
   - 
   - 
   - 

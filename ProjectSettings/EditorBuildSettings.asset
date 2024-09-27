@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Trail Puzzle Game.unity
+    path: Assets/Scenes/GameStart.unity
+    guid: 2ce958c72d7e6144d9cb211138ba8e04
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection.unity
+    guid: 05f803a457e3bd348b1a50985350487e
+  - enabled: 1
+    path: Assets/Scenes/Level_1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level_2.unity
+    guid: ddaf77e5ad963eb4b8c661affc41d2b6
+  - enabled: 1
+    path: Assets/Scenes/Level_3.unity
+    guid: 13c50140dc2801f45915e57ccaca5945
   m_configObjects: {}
