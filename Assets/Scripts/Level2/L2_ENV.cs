@@ -4,35 +4,51 @@ using UnityEngine;
 
 public class L2_ENV : MonoBehaviour
 {
-    public GameObject objUI;
-    // Start is called before the first frame update
-
-
-    public void UICheck()
+    bool disESC = false;
+    public GameObject pulseUI;
+    public GameObject loseUI;
+    public GameObject winUI;
+    public void showLoseUI()
     {
-        if (objUI.activeSelf)
+        disESC = true;
+        loseUI.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void showWinUI()
+    {
+        disESC = true;
+        winUI.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void showPulseUI()
+    {
+        if (pulseUI.activeSelf)
         {
-            objUI.SetActive(false);
+            pulseUI.SetActive(false);
             Time.timeScale = 1f;
         }
         else
         {
-            objUI.SetActive(true);
+            pulseUI.SetActive(true);
             Time.timeScale = 0f;
         }
     }
-    
+
     void Start()
     {
         Time.timeScale = 1f;
-        objUI.SetActive(false);
+        pulseUI.SetActive(false);
+        loseUI.SetActive(false);
+        winUI.SetActive(false);
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !disESC)
         {
-            UICheck();
+            showPulseUI();
         }
     }
 }

@@ -29,6 +29,12 @@ public class Scene_Management : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
+    public void Load_L3()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(4);
+    }
+
     public void Quite_Game()
     {
         Time.timeScale = 1f;

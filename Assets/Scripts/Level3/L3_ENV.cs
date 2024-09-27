@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class L1_ENV : MonoBehaviour
+public class L3_ENV : MonoBehaviour
 {
     bool disESC = false;
-    public GameObject obstical;
     public GameObject pulseUI;
     public GameObject loseUI;
     public GameObject winUI;
@@ -37,18 +36,12 @@ public class L1_ENV : MonoBehaviour
         }
     }
 
-    void ob_inact()
-    {
-        obstical.SetActive(false);
-    }
-    
     void Start()
     {
         Time.timeScale = 1f;
         pulseUI.SetActive(false);
         loseUI.SetActive(false);
         winUI.SetActive(false);
-        Invoke("ob_inact", 5f);
     }
 
     private void Update()
